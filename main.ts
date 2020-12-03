@@ -6,4 +6,6 @@ app.use((ctx) => {
   ctx.response.body = "Hello World!";
 });
 
-await app.listen({ port: 8000 });
+const port = Number.parseInt(Deno.env.get("PORT") ?? "8080", 10);
+
+await app.listen({ port });
