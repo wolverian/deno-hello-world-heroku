@@ -5,5 +5,5 @@ const s = serve({ port: 8080 });
 console.info("http://localhost:8080");
 
 for await (const req of s) {
-  req.respond({ body: "Helxlo, world!\n" });
+  req.respond({ body: "Hello, world!\n" });
 }
